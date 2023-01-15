@@ -1,6 +1,6 @@
 # My Personal Website!
 
-Right not its barebones, will add more stuff incrementally.
+Right now its barebones, will add more stuff incrementaly.
 
 # Getting Started with Create React App
 
