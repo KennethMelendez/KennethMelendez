@@ -1,3 +1,7 @@
+# My Personal Website!
+
+Right now its barebones, will add more stuff incrementaly.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
