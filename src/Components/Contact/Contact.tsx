@@ -9,9 +9,10 @@ export default function Contact() {
       alignItems="center"
       justifyContent="center"
       style={{ minHeight: "70vh" }}
+      lineHeight={0.7}
     >
-      <Grid item xs={3} padding={10}>
-        <h1>You can reach me at kennethmelendez@protonmail.com 💻</h1>
+      <Grid item xs={3}>
+        <h1><a href = "mailto: kennethmelendez@protonmail.com.com">✉</a></h1>
       </Grid>
     </Grid>
   );

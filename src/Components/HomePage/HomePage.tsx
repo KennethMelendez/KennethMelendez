@@ -1,4 +1,5 @@
 import { Grid } from "@mui/material";
+import kenny from "../../Images/kenny.gif";
 
 export default function HomePage() {
   return (
@@ -8,11 +9,14 @@ export default function HomePage() {
       direction="column"
       alignItems="center"
       justifyContent="center"
-      style={{ minHeight: "70vh" }}
+      style={{ minHeight: "70vh" , fontSize: "1.9em"}}
     >
       <Grid item xs={3}>
-        <h1>Hello, pleasure to meet you!</h1>
-        <h1>My name is Kenny 🥳</h1>
+        <h1>
+          Welcome! <img src={kenny} alt="" />
+        </h1>
+
+        <span>My names Kenny ⤴</span>
       </Grid>
     </Grid>
   );
