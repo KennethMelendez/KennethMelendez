@@ -1,9 +1,29 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import { vi } from "vitest";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+vi.mock("./Images/kenny.gif", () => ({ default: "kenny.gif" }));
+vi.mock("./components/ManhattanGrid", () => ({ default: () => null }));
+
+import App from "./App";
+
+describe("App", () => {
+  it("renders the name in the hero", () => {
+    render(<App />);
+    expect(screen.getAllByText(/Kenneth Melendez/).length).toBeGreaterThan(0);
+  });
+
+  it("renders the Tech Stack section", () => {
+    render(<App />);
+    expect(screen.getByText("Tech Stack")).toBeInTheDocument();
+  });
+
+  it("renders the Experience section", () => {
+    render(<App />);
+    expect(screen.getAllByText("Experience").length).toBeGreaterThan(0);
+  });
+
+  it("renders the contact heading", () => {
+    render(<App />);
+    expect(screen.getByText("Let's build something.")).toBeInTheDocument();
+  });
 });

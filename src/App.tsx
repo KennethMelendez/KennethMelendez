@@ -1,16 +1,23 @@
-import "./App.css";
-import "@fontsource/roboto";
-import {
-} from "@mui/material";
-import CenteredTabs from "./Components/CenteredTabs/CenteredTabs";
+import ManhattanGrid from "./components/ManhattanGrid";
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import CertsEducation from "./components/CertsEducation";
+import Contact from "./components/Contact";
 
-function App() {
-
+export default function App() {
   return (
-    <div className="App">
-      <CenteredTabs />
+    <div className="bg-[#0d0d0d] min-h-screen">
+      <ManhattanGrid />
+      <div className="relative z-10">
+        <Nav />
+        <Hero />
+        <Skills />
+        <Experience />
+        <CertsEducation />
+        <Contact />
+      </div>
     </div>
   );
 }
-
-export default App;
