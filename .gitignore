@@ -22,5 +22,5 @@ yarn-error.log*
 # OS
 .DS_Store
 
-# tooling
-.superpowers/
+# TypeScript build cache
+*.tsbuildinfo
