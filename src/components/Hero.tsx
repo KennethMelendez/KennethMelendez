@@ -38,11 +38,18 @@ export default function Hero() {
         </div>
 
         <div className="flex-shrink-0 order-first md:order-last">
-          <div className="p-1 border-2 border-white/30 rounded-lg">
+          <div
+            className="p-1.5"
+            style={{
+              background: "rgba(255, 255, 255, 0.3)",
+              clipPath:
+                "polygon(30% 0%, 70% 0%, 70% 10%, 90% 10%, 90% 30%, 100% 30%, 100% 70%, 90% 70%, 90% 90%, 70% 90%, 70% 100%, 30% 100%, 30% 90%, 10% 90%, 10% 70%, 0% 70%, 0% 30%, 10% 30%, 10% 10%, 30% 10%)",
+            }}
+          >
             <img
               src={kenny}
               alt="Kenneth Melendez"
-              className="w-36 h-36 sm:w-48 sm:h-48 object-cover rounded"
+              className="w-36 h-36 sm:w-48 sm:h-48 object-cover block"
               style={{ imageRendering: "pixelated" }}
             />
           </div>

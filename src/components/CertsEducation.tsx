@@ -18,7 +18,7 @@ export default function CertsEducation() {
         <h2 className="text-2xl font-bold text-white mb-6">Education</h2>
         <div className="space-y-5">
           <div>
-            <p className="text-white font-medium">Bachelor of Technology, Computer Systems</p>
+            <p className="text-white font-medium">Bachelor of Technology</p>
             <p className="text-sm text-[#909090]">New York City College of Technology (CUNY) · 2016</p>
           </div>
           <div>
